@@ -28,9 +28,9 @@ import lombok.ToString;
 @Table
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
-@RequiredArgsConstructor(staticName = "of")
 @AllArgsConstructor(access = AccessLevel.PROTECTED)
 @NoArgsConstructor
+@RequiredArgsConstructor(staticName = "of")
 public class Mensagem {
 
 

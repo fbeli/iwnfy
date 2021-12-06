@@ -30,8 +30,4 @@ public abstract class Pessoa {
 	@Column private String alias;
 	@Column private String email;
 	
-	
-	
-	
-	
 }
