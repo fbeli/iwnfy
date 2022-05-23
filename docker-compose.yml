@@ -1,0 +1,30 @@
+version: "3.9"
+
+networks:
+  iwnfy-network:
+    driver: bridge
+    
+services:
+  iwnfy-mysql:
+    image: mysql:8.0 
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+    ports:
+      - "3306:3306"
+    networks:
+      - iwnfy-network
+  
+  iwnfy-api:
+    image: iwnfy:latest
+    command: ["/wait-for-it.sh", "-t", "30", "iwnfy-mysql:3306", "--", "java", "-jar", "api.jar"]
+    environment: 
+      DB_HOST: iwnfy-mysql
+    ports:
+      - "8090:8090"
+    networks:
+      - iwnfy-network
+    depends_on:
+      - iwnfy-mysql
+   
+   
+   
