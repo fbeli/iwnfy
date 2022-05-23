@@ -1,4 +1,4 @@
-package com.becb.iwnfy.model;
+package com.becb.iwnfy.mensagem.model;
 
 public enum Status {
 

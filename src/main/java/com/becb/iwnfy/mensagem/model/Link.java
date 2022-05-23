@@ -1,4 +1,4 @@
-package com.becb.iwnfy.model;
+package com.becb.iwnfy.mensagem.model;
 
 import java.time.LocalDate;
 import javax.persistence.Column;

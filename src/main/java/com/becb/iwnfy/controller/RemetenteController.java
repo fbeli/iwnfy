@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.becb.iwnfy.DTO.RemetenteDTO;
-import com.becb.iwnfy.model.Remetente;
+import com.becb.iwnfy.pessoa.model.Remetente;
 import com.becb.iwnfy.service.RemetenteService;
 
 

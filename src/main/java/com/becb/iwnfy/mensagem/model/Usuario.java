@@ -1,4 +1,4 @@
-package com.becb.iwnfy.model;
+package com.becb.iwnfy.mensagem.model;
 
 
 import javax.persistence.Column;
@@ -25,4 +25,4 @@ public class Usuario {
     private String nome;
     @Column
     private String apelido;
-}
+}	

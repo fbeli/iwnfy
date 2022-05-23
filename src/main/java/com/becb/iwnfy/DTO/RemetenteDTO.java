@@ -2,7 +2,7 @@ package com.becb.iwnfy.DTO;
 
 
 
-import com.becb.iwnfy.model.Pessoa;
+import com.becb.iwnfy.pessoa.model.Pessoa;
 
 public class RemetenteDTO extends Pessoa {
 

@@ -1,5 +1,7 @@
 package com.becb.iwnfy;
 
+import java.io.File;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,7 +22,8 @@ public class EmailTest {
 	
 		var mensagemEmail = MensagemEmail.builder()
 				.assunto("Email de Teste Unitario")
-				.corpo("A <strong>mensagem</strong> está aqui")
+				.corpoHtml("email.html")
+				.corpo("venho por meio deste fazer um teste")
 				.destinatario("fred.belisario@gmail.com")
 				.build();
 		

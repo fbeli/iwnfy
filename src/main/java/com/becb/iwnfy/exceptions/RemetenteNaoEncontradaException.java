@@ -10,7 +10,7 @@ public class RemetenteNaoEncontradaException extends EntidadeNaoEncontradaExcept
 	}
 	
 	public RemetenteNaoEncontradaException(Long entidadeId) {
-		this(String.format("Não existe um Mensagem de Remetente com código %d", entidadeId));
+		this(String.format("Não existe de Remetente com código %d", entidadeId));
 	}
 	
 }

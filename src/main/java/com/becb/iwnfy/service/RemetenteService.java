@@ -12,8 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.becb.iwnfy.DTO.RemetenteDTO;
 import com.becb.iwnfy.exceptions.RemetenteNaoEncontradaException;
-import com.becb.iwnfy.model.Remetente;
-import com.becb.iwnfy.repository.RemetenteRepository;
+import com.becb.iwnfy.pessoa.model.Remetente;
+import com.becb.iwnfy.pessoa.repository.RemetenteRepository;
 
 @Service
 public class RemetenteService {

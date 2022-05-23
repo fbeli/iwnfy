@@ -1,4 +1,4 @@
-package com.becb.iwnfy.model;
+package com.becb.iwnfy.mensagem.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

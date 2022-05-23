@@ -1,7 +1,8 @@
-package com.becb.iwnfy.model;
+package com.becb.iwnfy.mensagem.model;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,6 +12,9 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.becb.iwnfy.pessoa.model.Destinatario;
+import com.becb.iwnfy.pessoa.model.Remetente;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -52,6 +56,10 @@ public class Mensagem {
     
     @ManyToOne
     private Remetente remetente;
+    
+    @OneToMany
+    private Set<Destinatario> destinatario;
+    
     
     //@Column    private TipoNotificacao notificacao;
 
