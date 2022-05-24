@@ -19,12 +19,18 @@ services:
     command: ["/wait-for-it.sh", "-t", "30", "iwnfy-mysql:3306", "--", "java", "-jar", "api.jar"]
     environment: 
       DB_HOST: iwnfy-mysql
-    ports:
-      - "8090:8090"
     networks:
       - iwnfy-network
     depends_on:
       - iwnfy-mysql
    
-   
-   
+  iwnfy-proxy:
+    build: ./nginx
+    image: iwnfy-proxy
+    ports:
+      - "80:80"
+    networks:
+      - iwnfy-network
+    depends_on:
+      - iwnfy-api
+    
